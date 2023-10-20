@@ -11,6 +11,7 @@ const button = tv({
   variants: {
     variant: {
       primary: 'bg-violet-600 text-white hover:bg-violet-700',
+      gost: 'rounded-md px-2 hover:bg-zinc-50 shadow-none',
       outline: 'border border-zinc-300 texdt-zinc-700 hover:bg-zinc-50',
     },
   },
@@ -22,10 +23,10 @@ const button = tv({
 
 export type ButtonProps = ComponentProps<'button'> & VariantProps<typeof button>
 
-const Button = ({ variant, ...props }: ButtonProps) => {
+const Button = ({ variant, children, ...props }: ButtonProps) => {
   return (
     <button {...props} className={button({ variant })}>
-      Cancel
+      {children}
     </button>
   )
 }
