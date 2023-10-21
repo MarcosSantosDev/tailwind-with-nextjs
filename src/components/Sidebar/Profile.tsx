@@ -5,7 +5,7 @@ import Button from '@/components/Button'
 
 export function Profile() {
   return (
-    <div className="flex items-center gap-3 border-t border-zinc-200 pt-5">
+    <div className="flex items-center gap-3">
       <img
         className="h-10 w-10 rounded-full"
         src="https://github.com/MarcosSantosDev.png"
